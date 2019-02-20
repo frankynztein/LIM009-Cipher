@@ -17,8 +17,12 @@ btnEncode.addEventListener('click', () => {
     let stringToEncode = document.getElementById('input-encode').value;
     let encodeOffset = parseInt(document.getElementById('encode-offset').value);
     let asciiCode = stringToEncode.charCodeAt(0);
-    let codedString = (asciiCode - 65 + encodeOffset) % 26 + 65;
+    let asciiCodedString = (asciiCode - asciiCodeUppercase + encodeOffset) % totalStringUppercase + asciiCodeUppercase;
+    let codedString = String.fromCharCode(asciiCodedString);
+    document.getElementById('encoded-message').innerHTML = codedString;
     console.log(stringToEncode);
     console.log(encodeOffset);
+    console.log(asciiCode);
+    console.log(asciiCodedString);
     console.log(codedString);
     })
