@@ -2,13 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta name="viewport">
+    <title>Area 51</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>Aquí va el logo</header>
+    <!-- MAIN SCREEN -->
     <div id="root">
-      <h1>¡Hola, mundo!</h1>
+      <h1>Algún texto aquí</h1>
+      <button id="btn-to-encode">ENCODE</button>
+      <button id="btn-to-decode">DECODE</button>
+      <span><a href="#"><p>Te enseñamos a usar AREA 51.</p></a></span>
     </div>
+    <!-- ENCODE SCREEN -->
+    <div>
+      <input id="input-encode" type="text" placeholder="Texto para codificar aquí"></br>
+      <input id="encode-offset" type="number" required></br>
+      <button id="btn-encode">ENCODE</button>
+    </div>
+    <!-- DECODE SCREEN -->
+    <div>
+      <input id="input-decode" type="text" placeholder="Texto para decodificar aquí"></br>
+      <input type="number" required></br>
+      <button id="btn-decode">DECODE</button>
+    </div>
+    <!-- HOW TO USE IT SCREEN -->
+    <div>
+      <h2>Algún subtítulo</h2>
+      <p>Así se usa el programa. Blah, blah, blah.</p>
+      <button>ENCODE</button>
+      <button>DECODE</button>
+    </div>
+    <!-- ENCODED MESSAGE SCREEN -->
+    <div>
+      <p>Aquí va el mensaje codificado</p>
+      <button>ENCODE</button>
+      <button>DECODE</button>
+    </div>
+    <!-- DECODED MESSAGE SCREEN -->
+    <div>
+        <p>Aquí va el mensaje de codificado</p>
+        <button>ENCODE</button>
+        <button>DECODE</button>
+      </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
