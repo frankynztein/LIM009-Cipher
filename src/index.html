@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area 51</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,13 +18,13 @@
     <!-- ENCODE SCREEN -->
     <div>
       <input id="input-encode" type="text" placeholder="Texto para codificar aquí"></br>
-      <input id="encode-offset" type="number" required></br>
+      <input id="encode-offset" type="number" min="1" max="100" placeholder="1" required></br>
       <button id="btn-encode">ENCODE</button>
     </div>
     <!-- DECODE SCREEN -->
     <div>
       <input id="input-decode" type="text" placeholder="Texto para decodificar aquí"></br>
-      <input type="number" required></br>
+      <input type="number" min="1" max="100" placeholder="1" required></br>
       <button id="btn-decode">DECODE</button>
     </div>
     <!-- HOW TO USE IT SCREEN -->
@@ -36,7 +36,7 @@
     </div>
     <!-- ENCODED MESSAGE SCREEN -->
     <div>
-      <p id="encoded-message">Aquí va el mensaje codificado</p>
+      <p id="encoded-message"></p>
       <button>ENCODE</button>
       <button>DECODE</button>
     </div>
