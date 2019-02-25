@@ -3,7 +3,7 @@ window.cipher = {
     let codedString = '';
 	for ( let i = 0; i < string.length; i++) {
     let asciiCode = string.charCodeAt(i);
-    if (asciiCode >= 32 && asciiCode <= 127) {
+    if (asciiCode >= 32 && asciiCode <= 126) {
       let asciiCodedString = (asciiCode - 32 + offset) % 95 + 32;
       codedString += String.fromCharCode(asciiCodedString);
     } else if (asciiCode >= 145 && asciiCode <= 156) {
@@ -20,8 +20,8 @@ window.cipher = {
     let decodedString = '';
     for ( let i = 0; i < string.length; i++) {
       let asciiCode = string.charCodeAt(i);
-      if (asciiCode >= 32 && asciiCode <= 127) {
-        let asciiCodedString = (asciiCode - 127 - offset) % 95 + 127;
+      if (asciiCode >= 32 && asciiCode <= 126) {
+        let asciiCodedString = (asciiCode - 126 - offset) % 95 + 126;
         decodedString += String.fromCharCode(asciiCodedString);
       } else if (asciiCode >= 145 && asciiCode <= 156) {
           let asciiCodedString = (asciiCode - 156 + offset) % 11 + 156;

@@ -7,45 +7,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Aquí va el logo</header>
+    <!-- LOGO -->
+    <header class="header">
+      <div class="container">
+          <figure class="logo">
+              <img src="http://s03.s3c.es/imag/_v0/770x420/b/e/1/GettyImages-83761354.jpg" height="50px" alt="Area 51"/>
+          </figure>
+      </div>
     <!-- MAIN SCREEN -->
     <div id="root">
-      <h1>Algún texto aquí</h1>
+      <h1>Welcome stranger!</h1>
       <button id="btn-to-encode">ENCODE</button>
       <button id="btn-to-decode">DECODE</button>
-      <span><a href="#"><p>Te enseñamos a usar AREA 51.</p></a></span>
+      <button id="btn-how-to">Learn how to use Area 51 Cypher</button>
     </div>
     <!-- ENCODE SCREEN -->
-    <div>
-      <input id="input-encode" type="text" placeholder="Texto para codificar aquí"></br>
-      <input id="encode-offset" type="number" min="1" max="100" placeholder="1" required></br>
+    <div class="screen" id="encode-screen">
+      <form id="encode-form">
+        <input id="input-encode" type="text" placeholder="Texto para codificar aquí"></br>
+        <input id="encode-offset" type="number" min="-100" max="100" placeholder="42" required></br>
+      </form>
       <button id="btn-encode">ENCODE</button>
     </div>
     <!-- DECODE SCREEN -->
-    <div>
-      <input id="input-decode" type="text" placeholder="Texto para decodificar aquí"></br>
-      <input id="decode-offset" type="number" min="1" max="100" placeholder="1" required></br>
+    <div class="screen" id="decode-screen">
+      <form id="decode-form">
+        <input id="input-decode" type="text" placeholder="Texto para decodificar aquí"></br>
+        <input id="decode-offset" type="number" min="-100" max="100" placeholder="42" required></br>
+      </form>
       <button id="btn-decode">DECODE</button>
     </div>
     <!-- HOW TO USE IT SCREEN -->
-    <div>
+    <div class="screen" id="how-to-screen">
       <h2>Algún subtítulo</h2>
       <p>Así se usa el programa. Blah, blah, blah.</p>
-      <button>ENCODE</button>
-      <button>DECODE</button>
+      <button id="btn-to-encode-2">ENCODE</button>
+      <button id="btn-to-decode-2">DECODE</button>
     </div>
     <!-- ENCODED MESSAGE SCREEN -->
-    <div>
+    <div class="screen" id="encoded-screen">
       <p id="encoded-message"></p>
-      <button>ENCODE</button>
-      <button>DECODE</button>
+      <button id="btn-to-encode-3">ENCODE</button>
+      <button id="btn-to-decode-3">DECODE</button>
     </div>
     <!-- DECODED MESSAGE SCREEN -->
-    <div>
-        <p id="decoded-message"></p>
-        <button>ENCODE</button>
-        <button>DECODE</button>
-      </div>
+    <div class="screen" id="decoded-screen">
+      <p id="decoded-message"></p>
+      <button id="btn-to-encode-4">ENCODE</button>
+      <button id="btn-to-decode-4">DECODE</button>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
