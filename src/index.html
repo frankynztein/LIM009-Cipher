@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area 51</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Prueba Area 51</title>
   </head>
   <body>
-    <!-- LOGO -->
-    <header class="header">
-      <div class="container">
-          <figure class="logo">
-              <img src="http://s03.s3c.es/imag/_v0/770x420/b/e/1/GettyImages-83761354.jpg" height="50px" alt="Area 51"/>
-          </figure>
+    <div class="grid-container">
+      <!-- LOGO -->
+      <header class="grid-item header">
+        <div class="containerTW">
+          <div class="typewriter">
+            <h1>Area 51</h1>
+          </div>
+        </div>
+      </header>
+      <!-- ENCODE AREA -->
+      <div class="grid-item encodeArea" id="encode-screen">
+        <label for="input-encode">Encode your message:</label>
+        <textarea id="input-encode" cols="30" rows="3" placeholder="Message:" required></textarea>
+        <!-- <input id="input-encode" type="text" required><br/> -->
+        <input id="encode-offset" type="number" min="-100" max="100" placeholder="Key" required><br/>
+        <button id="btn-encode">ENCODE</button>
+        <button id="btn-reset-1">RESET</button>
       </div>
-    <!-- MAIN SCREEN -->
-    <div id="root">
-      <h1>Welcome stranger!</h1>
-      <button id="btn-to-encode">ENCODE</button>
-      <button id="btn-to-decode">DECODE</button>
-      <button id="btn-how-to">Learn how to use Area 51 Cypher</button>
-    </div>
-    <!-- ENCODE SCREEN -->
-    <div class="screen" id="encode-screen">
-      <form id="encode-form">
-        <input id="input-encode" type="text" placeholder="Texto para codificar aquí"></br>
-        <input id="encode-offset" type="number" min="-100" max="100" placeholder="42" required></br>
-      </form>
-      <button id="btn-encode">ENCODE</button>
-    </div>
-    <!-- DECODE SCREEN -->
-    <div class="screen" id="decode-screen">
-      <form id="decode-form">
-        <input id="input-decode" type="text" placeholder="Texto para decodificar aquí"></br>
-        <input id="decode-offset" type="number" min="-100" max="100" placeholder="42" required></br>
-      </form>
-      <button id="btn-decode">DECODE</button>
-    </div>
-    <!-- HOW TO USE IT SCREEN -->
-    <div class="screen" id="how-to-screen">
-      <h2>Algún subtítulo</h2>
-      <p>Así se usa el programa. Blah, blah, blah.</p>
-      <button id="btn-to-encode-2">ENCODE</button>
-      <button id="btn-to-decode-2">DECODE</button>
-    </div>
-    <!-- ENCODED MESSAGE SCREEN -->
-    <div class="screen" id="encoded-screen">
-      <p id="encoded-message"></p>
-      <button id="btn-to-encode-3">ENCODE</button>
-      <button id="btn-to-decode-3">DECODE</button>
-    </div>
-    <!-- DECODED MESSAGE SCREEN -->
-    <div class="screen" id="decoded-screen">
-      <p id="decoded-message"></p>
-      <button id="btn-to-encode-4">ENCODE</button>
-      <button id="btn-to-decode-4">DECODE</button>
+      <!-- DECODE AREA -->
+      <div class="grid-item decodeArea" id="decode-screen">
+        <form id="decode-form">
+          <label for="input-decode">Decode your message:</label>
+          <textarea id="input-decode" cols="30" rows="3" placeholder="Message:" required></textarea>
+          <!-- <input id="input-decode" type="text" required><br/> -->
+          <input id="decode-offset" type="number" min="-100" max="100" placeholder="Key" required><br/>
+          <button id="btn-decode">DECODE</button>
+          <button id="btn-reset-2">RESET</button>
+        </form>
+      </div>
+      <!-- OFFSET AREA -->
+      <div class="grid-item offsetArea">
+        <label for="show-message">Your encoded/decoded message here:</label>
+        <textarea id="show-message" cols="30" rows="3"></textarea><br/>
+        <br/>
+        <br/>
+        <div class="tooltip">
+          <button id="btn-copy">COPY
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          </button>
+        </div>
+        <button id="btn-reset-3">RESET</button>
+      </div>
+      <!-- FOOTER AREA -->
+      <div class="grid-item footer">
+        <footer>Made by <a href="https://twitter.com/frankynztein">Frankynztein</a> feat. <a href="https://twitter.com/laboratoriala">Laboratoria</a> ©</footer>
+      </div>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

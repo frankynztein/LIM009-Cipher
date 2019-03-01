@@ -6,16 +6,17 @@ window.cipher = {
     if (asciiCode >= 32 && asciiCode <= 126) {
       let asciiCodedString = (asciiCode - 32 + offset) % 95 + 32;
       codedString += String.fromCharCode(asciiCodedString);
-    } else if (asciiCode >= 145 && asciiCode <= 156) {
-        let asciiCodedString = (asciiCode - 145 + offset) % 11 + 145;
+    } else if (asciiCode >= 161 && asciiCode <= 172) {
+        let asciiCodedString = (asciiCode - 161 + offset) % 12 + 161;
         codedString += String.fromCharCode(asciiCodedString);
-    } else if (asciiCode >= 161 && asciiCode <= 255) {
-        let asciiCodedString = (asciiCode - 161 + offset) % 94 + 161;
-        codedString += String.fromCharCode(asciiCodedString);
-  }
+    } else if (asciiCode >= 186 && asciiCode <= 255) {
+      let asciiCodedString = (asciiCode - 186 + offset) % 70 + 186;
+      codedString += String.fromCharCode(asciiCodedString);
+    }
 	}
 	return codedString;
   },
+
   decode: (string, offset) => {
     let decodedString = '';
     for ( let i = 0; i < string.length; i++) {
@@ -23,13 +24,13 @@ window.cipher = {
       if (asciiCode >= 32 && asciiCode <= 126) {
         let asciiCodedString = (asciiCode - 126 - offset) % 95 + 126;
         decodedString += String.fromCharCode(asciiCodedString);
-      } else if (asciiCode >= 145 && asciiCode <= 156) {
-          let asciiCodedString = (asciiCode - 156 + offset) % 11 + 156;
+      } else if (asciiCode >= 161 && asciiCode <= 172) {
+          let asciiCodedString = (asciiCode - 172 - offset) % 12 + 172;
           decodedString += String.fromCharCode(asciiCodedString);
-      } else if (asciiCode >= 161 && asciiCode <= 255) {
-          let asciiCodedString = (asciiCode - 255 - offset) % 94 + 255;
+      } else if (asciiCode >= 186 && asciiCode <= 255) {
+          let asciiCodedString = (asciiCode - 255 - offset) % 70 + 255;
           decodedString += String.fromCharCode(asciiCodedString);
-    }
+      }
     }
     return decodedString;
     },
