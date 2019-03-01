@@ -10,8 +10,12 @@ window.cipher = {
         let asciiCodedString = (asciiCode - 161 + offset) % 12 + 161;
         codedString += String.fromCharCode(asciiCodedString);
     } else if (asciiCode >= 186 && asciiCode <= 255) {
-      let asciiCodedString = (asciiCode - 186 + offset) % 70 + 186;
-      codedString += String.fromCharCode(asciiCodedString);
+        let asciiCodedString = (asciiCode - 186 + offset) % 70 + 186;
+        codedString += String.fromCharCode(asciiCodedString);
+    } else if (asciiCode == 10) {
+        codedString += String.fromCharCode(10);
+    } else {
+        codedString = 'CharNotFound';
     }
 	}
 	return codedString;
@@ -30,6 +34,10 @@ window.cipher = {
       } else if (asciiCode >= 186 && asciiCode <= 255) {
           let asciiCodedString = (asciiCode - 255 - offset) % 70 + 255;
           decodedString += String.fromCharCode(asciiCodedString);
+      } else if (asciiCode == 10) {
+          decodedString += String.fromCharCode(10);
+      } else {
+          decodedString = "CharNotFound";
       }
     }
     return decodedString;
