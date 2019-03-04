@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>Area 51 Cipher</title>
+    <title>Area 51</title>
   </head>
   <body>
     <div class="grid-container">
@@ -16,30 +17,40 @@
           </div>
         </div>
       </header>
+      <!-- ENGLISH VERSION -->
+      <div id="welcome-area">
+        <h2>Welcome, human!</h2>
+        <h3>If you are a robot, please, let me know.</h3>
+        <br/>
+        <br/>
+        <p>Choose your language:</p>
+        <br/>
+        <button id="btn-english">ENGLISH</button>
+        <button id="btn-spanish">ESPAÑOL</button><br/>
+        <button id="btn-teachme">Teach me how to cipher!</button><br/>
+        <img src="../images/undraw_artificial_intelligence_upfn.svg" alt="Robot">
+      </div>
       <!-- ENCODE AREA -->
       <div class="grid-item encodeArea" id="encode-screen">
         <label for="input-encode">Encode your message:</label>
-        <textarea id="input-encode" cols="30" rows="3" placeholder="Message:" required></textarea>
-        <!-- <input id="input-encode" type="text" required><br/> -->
-        <input id="encode-offset" type="number" min="-100" max="100" placeholder="Key" required><br/>
+        <textarea id="input-encode" cols="30" rows="3" placeholder="Message:" required ></textarea>
+        <input id="encode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
         <button id="btn-encode">ENCODE</button>
         <button id="btn-reset-1">RESET</button>
       </div>
       <!-- DECODE AREA -->
       <div class="grid-item decodeArea" id="decode-screen">
-        <form id="decode-form">
-          <label for="input-decode">Decode your message:</label>
-          <textarea id="input-decode" cols="30" rows="3" placeholder="Message:" required></textarea>
-          <!-- <input id="input-decode" type="text" required><br/> -->
-          <input id="decode-offset" type="number" min="-100" max="100" placeholder="Key" required><br/>
-          <button id="btn-decode">DECODE</button>
-          <button id="btn-reset-2">RESET</button>
-        </form>
+        <label for="input-decode">Decode your message:</label>
+        <textarea id="input-decode" cols="30" rows="3" placeholder="Message:" required ></textarea>
+        <input id="decode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
+        <button id="btn-decode">DECODE</button>
+        <button id="btn-reset-2">RESET</button>
       </div>
       <!-- OFFSET AREA -->
-      <div class="grid-item offsetArea">
+      <div class="grid-item offsetArea" id="offset-screen">
         <label for="show-message">Your encoded/decoded message here:</label>
         <textarea id="show-message" cols="30" rows="3"></textarea><br/>
+        <label>Copy your message and send it!</label>
         <br/>
         <br/>
         <div class="tooltip">
@@ -48,10 +59,16 @@
           </button>
         </div>
         <button id="btn-reset-3">RESET</button>
+        <br/>
+        <a href="https://wa.me/?text=I%20have%20a%20message%20for%20you" data-action="share/whatsapp/share" target="_blank" class="whatsapp"><img src="../images/whatsapp-logo.png" class="btn-social" alt="Logo-WhatsApp"></a>
+        <a href="mailto:someone@example.com?" target="_top"><img src="../images/envelope.png" class="btn-social" alt="Email"></a>
       </div>
       <!-- FOOTER AREA -->
       <div class="grid-item footer">
-        <footer>Made by <a href="https://twitter.com/frankynztein">Frankynztein</a> feat. <a href="https://twitter.com/laboratoriala">Laboratoria</a> ©</footer>
+        <footer>
+          <p><a href="#">¡Llévame a la versión en español <i class="em em-flag-ve"></i>!</a></p>
+          <p>Made by <a href="https://twitter.com/frankynztein">Frankynztein</a> feat. <a href="https://twitter.com/laboratoriala">Laboratoria ♥</a> ©</p>
+        </footer>
       </div>
     </div>
     <script src="cipher.js"></script>

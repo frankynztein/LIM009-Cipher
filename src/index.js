@@ -1,5 +1,14 @@
 // Introducing HTML elements to JavaScript
+const welcomeArea = document.getElementById('welcome-area');
+const btnEnglish = document.getElementById('btn-english');
+const btnSpanish = document.getElementById('btn-spanish');
+const encodeScreen = document.getElementById('encode-screen');
+const decodeScreen = document.getElementById('decode-screen');
+const offsetScreen = document.getElementById('offset-screen');
 const inputEncode = document.getElementById('input-encode');
+const inputDecode = document.getElementById('input-decode');
+const encodeOffset = document.getElementById('encode-offset');
+const decodeOffset = document.getElementById('decode-offset');
 const btnEncode = document.getElementById('btn-encode');
 const btnDecode = document.getElementById('btn-decode');
 const showMessage = document.getElementById('show-message');
@@ -8,7 +17,7 @@ const btnReset1 = document.getElementById('btn-reset-1');
 const btnReset2 = document.getElementById('btn-reset-2');
 const btnReset3 = document.getElementById('btn-reset-3');
 
-// COPY FUNCTION
+// FUNCTION COPY
 function copyMessage() {
     var copyText = showMessage;
     copyText.select();
@@ -17,47 +26,53 @@ function copyMessage() {
     tooltip.innerHTML = "Copied";
 }
 
-// function tooltipFunction() {
-//     var tooltip = document.getElementById("myTooltip");
-//     tooltip.innerHTML = "Copy to clipboard";
-// }
+// ENGLISH BUTTON
+btnEnglish.addEventListener('click', () => {
+    welcomeArea.style.display = 'none';
+    encodeScreen.style.display = 'block';
+    decodeScreen.style.display = 'block';
+    offsetScreen.style.display = 'block';
+})
 
-//ENCODE FUNCTION
+// SPANISH BUTTON
+btnSpanish.addEventListener('click', () => {
+    alert('Hola');
+})
+
+//ENCODE BUTTON
 btnEncode.addEventListener('click', () => {
     let string = inputEncode.value;
-    let offset = parseInt(document.getElementById('encode-offset').value);
+    let offset = parseInt(encodeOffset.value);
     showMessage.innerHTML = '';
     const codedString = cipher.encode(string, offset);
     showMessage.innerHTML += codedString;
-    // document.getElementById("encode-form").reset();
 })
 
-// DECODE FUNCTION
+// DECODE BUTTON
 btnDecode.addEventListener('click', () => {
-    let string = document.getElementById('input-decode').value;
-    let offset = parseInt(document.getElementById('decode-offset').value);
+    let string = inputDecode.value;
+    let offset = parseInt(decodeOffset.value);
     showMessage.innerHTML = '';
     const decodedString = cipher.decode(string, offset);
     showMessage.innerHTML += decodedString;
-    // document.getElementById("decode-form").reset();
 })
 
-// RESET BUTTON
+// RESET BUTTONS
 btnReset1.addEventListener('click', () => {
-    alert('reset 1');
-    inputEncode.innerHTML = '';
+    inputEncode.value = '';
+    encodeOffset.value = '';
 })
 
 btnReset2.addEventListener('click', () => {
-    alert('reset 2');
+    inputDecode.value = '';
+    decodeOffset.value = '';
 })
 
 btnReset3.addEventListener('click', () => {
-    alert('Reset 3');
+    showMessage.value = '';
 })
 
 // COPY BUTTON
 btnCopy.addEventListener('click', () => {
     copyMessage();
-    // tooltipFunction();
 })

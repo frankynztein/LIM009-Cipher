@@ -28,7 +28,7 @@ En este sistema las letras no siempre corresponden a letras y los números no si
 
 Por ejemplo: usando un desplazamiento de 30, la letra *A* se cifraría a *"_"*.
 
-Además, tomando en cuenta que los snippets de código forman parte de la información que comparten, se ofrece soporte para caracteres especiales. Tampoco se deja de lado a los usuarios latinoamericanos, por lo que también incluye soporte para vocales acentuadas y letra "ñ".
+Además, tomando en cuenta que los fragmentos de código forman parte de la información que comparten, se ofrece soporte para caracteres especiales (*+´{}[]... etc). Tampoco se deja de lado a los usuarios latinoamericanos, por lo que también incluye soporte para vocales acentuadas y letra "ñ".
 
 
 ## Usar Area 51 Cipher es la parte más sencilla ;)

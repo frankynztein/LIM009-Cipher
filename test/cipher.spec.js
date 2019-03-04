@@ -14,21 +14,21 @@ describe('cipher', () => {
       assert.equal(cipher.encode('ABCDEFGHIJ', 33), 'bcdefghijk');
     });
 
-    it('debería retornar "¤¥¦" para "¡¢£" con offset 3', () =>{
+    it('debería retornar "¤¥¦" para "¡¢£" con offset 3', () => {
       assert.equal(cipher.encode('¡¢£', 3), '¤¥¦');
     });
 
-    it('debería retornar "ÄÅÆ" para "ÁÂÃ" con offset 3', () =>{
+    it('debería retornar "ÄÅÆ" para "ÁÂÃ" con offset 3', () => {
       assert.equal(cipher.encode('ÁÂÃ', 3), 'ÄÅÆ');
     });
 
-// PROBANDO ENTER KEY
-    it('debería retornar "↵" para "↵" con offset 3', () =>{
+// TESTING ENTER KEY
+    it('debería retornar "↵" para "↵" con offset 3', () => {
       const enterKey = String.fromCharCode(10);
       assert.equal(cipher.encode(enterKey, 3), enterKey);
     });
 
-    it('debería retornar "CharNotFound" para "‰" con offset 3', () =>{
+    it('debería retornar "CharNotFound" para "‰" con offset 3', () => {
       assert.equal(cipher.encode('‰', 3), 'CharNotFound');
     });
   });
@@ -43,21 +43,21 @@ describe('cipher', () => {
       assert.equal(cipher.decode('bcdefghijk', 33), 'ABCDEFGHIJ');
     });
 
-    it('debería retornar "¡¢£" para "¤¥¦" con offset 3', () =>{
+    it('debería retornar "¡¢£" para "¤¥¦" con offset 3', () => {
       assert.equal(cipher.decode('¤¥¦', 3), '¡¢£');
     });
 
-    it('debería retornar "ÁÂÃ" para "ÄÅÆ" con offset 3', () =>{
+    it('debería retornar "ÁÂÃ" para "ÄÅÆ" con offset 3', () => {
       assert.equal(cipher.decode('ÄÅÆ', 3), 'ÁÂÃ');
     });
 
-    // PROBANDO ENTER KEY
+  // TESTING ENTER KEY
     it('debería retornar "↵" para "↵" con offset 3', () =>{
       const enterKey = String.fromCharCode(10);
       assert.equal(cipher.decode(enterKey, 3), enterKey);
     });
 
-    it('debería retornar "CharNotFound" para "‰" con offset 3', () =>{
+    it('debería retornar "CharNotFound" para "‰" con offset 3', () => {
       assert.equal(cipher.decode('‰', 3), 'CharNotFound');
     });
   });

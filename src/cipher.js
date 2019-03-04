@@ -15,7 +15,7 @@ window.cipher = {
     } else if (asciiCode == 10) {
         codedString += String.fromCharCode(10);
     } else {
-        codedString = 'CharNotFound';
+        codedString += 'CharNotFound';
     }
 	}
 	return codedString;
@@ -37,7 +37,7 @@ window.cipher = {
       } else if (asciiCode == 10) {
           decodedString += String.fromCharCode(10);
       } else {
-          decodedString = "CharNotFound";
+          decodedString += "CharNotFound";
       }
     }
     return decodedString;
