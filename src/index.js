@@ -37,11 +37,6 @@ btnEnglish.addEventListener('click', () => {
     offsetScreen.style.display = 'block';
 })
 
-// SPANISH BUTTON
-// btnSpanish.addEventListener('click', () => {
-//     alert('Hola');
-// })
-
 // TEACHME BUTTON
 btnTeachMe.addEventListener('click', () => {
     welcomeArea.style.display = 'none';
