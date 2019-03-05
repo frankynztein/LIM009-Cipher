@@ -38,9 +38,9 @@ btnEnglish.addEventListener('click', () => {
 })
 
 // SPANISH BUTTON
-btnSpanish.addEventListener('click', () => {
-    alert('Hola');
-})
+// btnSpanish.addEventListener('click', () => {
+//     alert('Hola');
+// })
 
 // TEACHME BUTTON
 btnTeachMe.addEventListener('click', () => {

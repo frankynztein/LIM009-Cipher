@@ -2,53 +2,63 @@
 
 ![Gráfico 01](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-01.png)
 
-
-Usando VanillaJS, HTML y CSS, **AREA 51 CIPHER** es una aplicación web creada para brindarte seguridad cuando compartes información.
-En el área tecnológica, especialmente por el ritmo de trabajo, los programadores requieren estar en comunicación constante, compartiendo información que muchas veces es confidencial y una característica infalible en el sistema que decidan usar es la SEGURIDAD.
+Using VanillaJS, HTML and CSS, ** AREA 51 CIPHER ** is a web app created to give you security each time you share information.
+In the tech area, programmers need to be in constant communication, sharing information that is often confidential and an infallible feature in the system they choose to use is SAFETY.
 
 ![Gráfico 02](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-02.png)
 
 
-**Area** 51 Cipher ofrece un sistema de **Cifrado César Reloaded**.
+** Area 51 Cipher ** offers a system of ** Caesar's Cipher Reloaded ** encryption system.
 
-Quizás sepas que el Cifrado César es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+Maybe you know that Caesar's Cipher is one of the simplest techniques to encrypt a message. It is a type of cipher by substitution, that means that each letter of the original text is replaced by another one that is a fixed number of positions (offset) later in the same alphabet.
 
-Por ejemplo, si usamos una clave de cifrado (Key) de 3 posiciones:
-- La letra *A* se cifra como *D*.
-- La palabra *CASA* se cifra como *FDVD*.
-- Alfabeto sin cifrar: *A B C D E F G H I J K L M N O P Q R S T U V W X Y Z*
-- Alfabeto cifrado: *D E F G H I J K L M N O P Q R S T U V W X Y Z A B C*
+For example, if we use a 3-position encryption key:
+- The letter * A * is encrypted as * D *.
+- The word * CASA * ​​is encrypted as * FDVD *.
+- Uncoded alphabet: * A B C D E F G H I J K L M N O P Q R S T U V W X Y Z *
+- Cipher alphabet: * D E F G H I J K L M N O P Q R S T U V W X Y Z A B C *
 
-*Pero ¿por qué Reloaded?* - se preguntarán.
+
+* But why Reloaded? * - you may wonder.
 
 ![Gráfico 03](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-03.png)
 
 
-En este sistema las letras no siempre corresponden a letras y los números no siempre corresponden a números.
+In this system the letters do not always correspond to letters and the numbers do not always correspond to numbers.
 
-Por ejemplo: usando un desplazamiento de 30, la letra *A* se cifraría a *"_"*.
+For example: using an offset of 30, the letter * A * would be encrypted to * "_" *.
 
-Además, tomando en cuenta que los fragmentos de código forman parte de la información que comparten, se ofrece soporte para caracteres especiales (*+´{}[]... etc). Tampoco se deja de lado a los usuarios latinoamericanos, por lo que también incluye soporte para vocales acentuadas y letra "ñ".
+In addition, taking into account that code fragments are part of the information programmers share, special characters (* + '{} [] ... etc) have tech support. Nor is Latin American users ignored, so it also includes tech support for accented vowels and the letter "ñ".
 
-
-## Usar Area 51 Cipher es la parte más sencilla ;)
-
-
-Así verás la pantalla de inicio:
-
-![Gráfico 04](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-05.png)
+## Share your messages
 
 
-Si quieres cifrar un mensaje importante (*o simplemente no quieres que alguien no deseado pueda entenderlo*), escribirás o pegarás tu mensaje en la sección de **Encode your message** y click en **Encode**:
+![Gráfico 04](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-04.png)
 
-![Gráfico 05](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-06.png)
+Do you need to send the message quickly? Relax! WhatsApp comes to the rescue with a link.
+And for the old school, email.
 
-
-En caso de querer decodificar un mensaje que te enviaron, harás las mismas acciones que leíste anteriormente pero... *¡Sí, adivinaste!* En la sección de **Decode your message** y click en **Decode**:
-
-![Gráfico 06](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-07.png)
+## Area 51 Cipher is super easy to use ;)
 
 
-El resultado de tu cifrado/descifrado se mostrará en el área **Your encoded/decoded message here**. Tienes la opción de copiar el mensaje (_botón **Copy**_) para llevártelo a dónde desees :wink:
+This is the welcome area. You just choose your language and you're ready to cipher!
 
-![Gráfico 07](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-08.png)
+![Gráfico 05](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher01.jpg)
+
+![Gráfico 06](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher02.jpg)
+
+
+If you want to encrypt an important message (* or you just don't want someone to understand it *), you will write or paste your message in the ** Encode your message ** section, enter the key (a number up to 100) and click on ** Encode **:
+
+![Gráfico 07](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher03.jpg)
+
+
+In case you want to decode a message, you'll do the same as you read before but ... * Yes, you guessed it! * In the ** Decode your message ** section, enter the key and click on ** Decode **:
+
+![Gráfico 08](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher04.jpg)
+
+
+
+The result of your encoded/decoded will be shown in the ** Your encoded / decoded message here ** area. You have the option to copy the message (_button ** Copy ** _) to take it wherever you want, plus, WhatsApp and email to send it. : wink:
+
+![Gráfico 09](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher05.jpg)
