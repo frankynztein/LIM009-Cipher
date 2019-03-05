@@ -2,11 +2,36 @@
 
 ![Gráfico 01](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-01.png)
 
-Using VanillaJS, HTML and CSS, ** AREA 51 CIPHER ** is a web app created to give you security each time you share information.
-In the tech area, programmers need to be in constant communication, sharing information that is often confidential and an infallible feature in the system they choose to use is SAFETY.
+
+Using VanillaJS, HTML and CSS, **AREA 51 CIPHER** is a web application created to provide security to those who work in the Tech Area when they share information.
+
+Especially rogrammers need to be in constant communication, sharing information that is often confidential and an infallible feature in the system they choose to use is SECURITY.
 
 ![Gráfico 02](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-02.png)
 
+
+** AREA 51 Cipher ** is especially aimed to people aged 20-45 who work in the Tech Area and need to communicate with their teams in a safe way.
+
+
+When conducting interviews with users, they shared:
+
+* "One feature I would like is a copy button." *
+
+* "Make it as simple as possible". *
+
+* "A clean, simple interface". *
+
+* "I want to be able to share the message easily". *
+
+
+The most important thing during the interviews is SECURITY:
+
+* "I would use an app that ensures that my information will be kept confidential and nobody else will have access." *
+
+
+Consequently, * AREA 51 Cipher * offers a ** Caesar's Cipher Reloaded ** encryption system, in addition to the possibility of sharing messages directly from the web, either through WhatsApp or email.
+
+[You can listen the interviews HERE](https://drive.google.com/drive/folders/1802L6TP0h8Kr1qmDMhn2ZvQaK7cuVpXr?usp=sharing)
 
 ** Area 51 Cipher ** offers a system of ** Caesar's Cipher Reloaded ** encryption system.
 
