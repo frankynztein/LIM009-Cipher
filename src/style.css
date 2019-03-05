@@ -4,7 +4,7 @@
    padding: 0;
  }
 
-#encode-screen, #decode-screen, #offset-screen {
+#encode-screen, #decode-screen, #offset-screen, #teachme-screen {
    display: none;
 }
 
@@ -129,7 +129,7 @@ h2 {
 }
 
 p {
-   font-size: 30px;
+   font-size: 18px;
 }
 
 a {
@@ -269,7 +269,7 @@ button:active, #btn-teachme:active {
    width: 50px;
 }
 
-#welcome-area {
+#welcome-area, #teachme-screen {
    text-align: center;
    position: absolute;
    width: 600px;
@@ -281,7 +281,24 @@ button:active, #btn-teachme:active {
  }
 
  img {
+    width: 700px;
+    border: 2px solid white;
+    margin: 0px 10px 15px -50px;
+ }
+
+ #img-robot {
     width: 350px;
     text-align: end;
+    margin-top: 20px;
+    border: none;
+    margin: initial;
+ }
+
+ .btn-social {
+    border: none;
+    margin: initial;
+ }
+
+ #btn-whatsapp, #btn-email {
     margin-top: 20px;
  }

@@ -2,6 +2,9 @@
 const welcomeArea = document.getElementById('welcome-area');
 const btnEnglish = document.getElementById('btn-english');
 const btnSpanish = document.getElementById('btn-spanish');
+const btnTeachMe = document.getElementById('btn-teachme');
+const teachMeScreen = document.getElementById('teachme-screen');
+const btnLetsCipher = document.getElementById('btn-letscipher');
 const encodeScreen = document.getElementById('encode-screen');
 const decodeScreen = document.getElementById('decode-screen');
 const offsetScreen = document.getElementById('offset-screen');
@@ -37,6 +40,20 @@ btnEnglish.addEventListener('click', () => {
 // SPANISH BUTTON
 btnSpanish.addEventListener('click', () => {
     alert('Hola');
+})
+
+// TEACHME BUTTON
+btnTeachMe.addEventListener('click', () => {
+    welcomeArea.style.display = 'none';
+    teachMeScreen.style.display = 'block';
+})
+
+// LET'S CIPHER BUTTON
+btnLetsCipher.addEventListener('click', () => {
+    teachMeScreen.style.display = 'none';
+    encodeScreen.style.display = 'block';
+    decodeScreen.style.display = 'block';
+    offsetScreen.style.display = 'block';
 })
 
 //ENCODE BUTTON
