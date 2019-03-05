@@ -64,6 +64,8 @@ In addition, taking into account that code fragments are part of the information
 Do you need to send the message quickly? Relax! WhatsApp comes to the rescue with a link.
 And for the old school, email.
 
+**Area 51 Cipher** will help you keep all your important information safe from the wrong eyes : wink:
+
 ## Area 51 Cipher is super easy to use ;)
 
 
@@ -88,3 +90,5 @@ In case you want to decode a message, you'll do the same as you read before but 
 The result of your encoded/decoded will be shown in the **Your encoded / decoded message here** area. You have the option to copy the message (_button **Copy** _) to take it wherever you want, plus, WhatsApp and email to send it. : wink:
 
 ![Gráfico 09](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher05.jpg)
+
+[Try the app HERE.](https://frankynztein.github.io/LIM009-Cipher/src)
