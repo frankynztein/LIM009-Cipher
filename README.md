@@ -5,7 +5,7 @@
 
 Using VanillaJS, HTML and CSS, **AREA 51 CIPHER** is a web application created to provide security to those who work in the Tech Area when they share information.
 
-Especially rogrammers need to be in constant communication, sharing information that is often confidential and an infallible feature in the system they choose to use is SECURITY.
+Especially programmers need to be in constant communication, sharing information that is often confidential and an infallible feature in the system they choose to use is SECURITY.
 
 ![Gráfico 02](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/readme-images/Readme-img-02.png)
 
