@@ -1,7 +1,6 @@
 // Introducing HTML elements to JavaScript
 const welcomeArea = document.getElementById('welcome-area');
 const btnEnglish = document.getElementById('btn-english');
-const btnSpanish = document.getElementById('btn-spanish');
 const btnTeachMe = document.getElementById('btn-teachme');
 const teachMeScreen = document.getElementById('teachme-screen');
 const btnLetsCipher = document.getElementById('btn-letscipher');
