@@ -33,7 +33,7 @@ Consequently, **AREA 51 Cipher** offers a **Caesar's Cipher Reloaded** encryptio
 
 [You can listen the interviews HERE](https://drive.google.com/drive/folders/1802L6TP0h8Kr1qmDMhn2ZvQaK7cuVpXr?usp=sharing)
 
-** Area 51 Cipher ** offers a system of **Caesar's Cipher Reloaded** encryption system.
+**Area 51 Cipher** offers a system of **Caesar's Cipher Reloaded** encryption system.
 
 Maybe you know that Caesar's Cipher is one of the simplest techniques to encrypt a message. It is a type of cipher by substitution, that means that each letter of the original text is replaced by another one that is a fixed number of positions (offset) later in the same alphabet.
 
@@ -74,17 +74,17 @@ This is the welcome area. You just choose your language and you're ready to ciph
 ![Gráfico 06](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher02.jpg)
 
 
-If you want to encrypt an important message (*or you just don't want someone to understand it*), you will write or paste your message in the **Encode your message** section, enter the key (a number up to 100) and click on ** Encode **:
+If you want to encrypt an important message (*or you just don't want someone to understand it*), you will write or paste your message in the **Encode your message** section, enter the key (a number up to 100) and click on **Encode**:
 
 ![Gráfico 07](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher03.jpg)
 
 
-In case you want to decode a message, you'll do the same as you read before but ... *Yes, you guessed it!* In the **Decode your message** section, enter the key and click on ** Decode **:
+In case you want to decode a message, you'll do the same as you read before but ... *Yes, you guessed it!* In the **Decode your message** section, enter the key and click on **Decode**:
 
 ![Gráfico 08](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher04.jpg)
 
 
 
-The result of your encoded/decoded will be shown in the **Your encoded / decoded message here** area. You have the option to copy the message (_button ** Copy ** _) to take it wherever you want, plus, WhatsApp and email to send it. : wink:
+The result of your encoded/decoded will be shown in the **Your encoded / decoded message here** area. You have the option to copy the message (_button **Copy** _) to take it wherever you want, plus, WhatsApp and email to send it. : wink:
 
 ![Gráfico 09](https://github.com/frankynztein/LIM009-Cipher/blob/master/images/english/cipher05.jpg)
