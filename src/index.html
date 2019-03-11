@@ -19,64 +19,78 @@
       </header>
       <!-- ENGLISH VERSION -->
       <main class="welcome-area" id="welcome-area">
-        <h2>Welcome, human!</h2>
-        <h3>If you are a robot, please, let me know.</h3>
-        <br/>
-        <br/>
-        <p>Choose your language:</p>
-        <br/>
-        <button id="btn-english">ENGLISH</button>
-        <a href="https://frankynztein.github.io/Cipher-Spanish-Version/src" target="_blank"><button id="btn-spanish">ESPAÑOL</button></a><br/>
-        <button class="btn-teachme" id="btn-teachme">Teach me how to cipher!</button><br/>
-        <img src="../images/undraw_artificial_intelligence_upfn.svg" alt="Robot" class="img-robot">
+        <section>
+          <h2>Welcome, human!</h2>
+          <h3>If you are a robot, please, let me know.</h3>
+          <br/>
+          <br/>
+        </section>
+        <section>
+          <p>Choose your language:</p>
+          <br/>
+          <button id="btn-english">ENGLISH</button>
+          <a href="https://frankynztein.github.io/Cipher-Spanish-Version/src" target="_blank"><button id="btn-spanish">ESPAÑOL</button></a><br/>
+          <button class="btn-teachme" id="btn-teachme">Teach me how to cipher!</button><br/>
+        </section>
+        <figure>
+          <img src="../images/undraw_artificial_intelligence_upfn.svg" alt="Robot" class="img-robot">
+        </figure>
       </main>
       <div class="teachme-screen" id="teachme-screen">
-        <p>It's pretty simple. Once you've selected your language, you'll see this screen.</p><br/>
-        <img src="../images/english/cipher02.jpg" alt=""><br/>
-        <p>As you can see, you have three areas. The first one is for you to code.
-          Do you have any message you don't want the wrong person to read?
-          Then, enter your message, select a key (a number) and click <strong>Encode</strong>.</p><br/>
-        <img src="../images/english/cipher03.jpg" alt=""><br/>
-        <p>Perhaps somebody gave you a message with very important information
-          and a key for you to decypher. That middle area is the one for you.</p><br/>
-        <img src="../images/english/cipher04.jpg" alt=""><br/>
-        <p>In the last area you'll see your encoded/decoded message. Here you can
-          copy it and share it. Easy peasy, right? <i class="em em-relaxed"></i></p><br/>
-        <img src="../images/english/cipher05.jpg" alt=""><br/>
-        <button id="btn-letscipher">Got it! Let's cipher!</button>
+        <article>
+          <p>It's pretty simple. Once you've selected your language, you'll see this screen.</p><br/>
+          <img src="../images/english/cipher02.jpg" alt=""><br/>
+          <p>As you can see, you have three areas. The first one is for you to code.
+            Do you have any message you don't want the wrong person to read?
+            Then, enter your message, select a key (a number) and click <strong>Encode</strong>.</p><br/>
+          <img src="../images/english/cipher03.jpg" alt=""><br/>
+          <p>Perhaps somebody gave you a message with very important information
+            and a key for you to decypher. That middle area is the one for you.</p><br/>
+          <img src="../images/english/cipher04.jpg" alt=""><br/>
+          <p>In the last area you'll see your encoded/decoded message. Here you can
+            copy it and share it. Easy peasy, right? <i class="em em-relaxed"></i></p><br/>
+          <img src="../images/english/cipher05.jpg" alt=""><br/>
+          <button id="btn-letscipher">Got it! Let's cipher!</button>
+        </article>
       </div>
       <!-- ENCODE AREA -->
       <div class="grid-item encode-area" id="encode-screen">
-        <label for="input-encode">Encode your message:</label>
-        <textarea id="input-encode" cols="30" rows="3" placeholder="Message:" required ></textarea>
-        <input id="encode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
-        <button id="btn-encode">ENCODE</button>
-        <button id="btn-reset-1">RESET</button>
+        <section>
+          <label for="input-encode">Encode your message:</label>
+          <textarea id="input-encode" cols="30" rows="3" placeholder="Message:" required ></textarea>
+          <input id="encode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
+          <button id="btn-encode">ENCODE</button>
+          <button id="btn-reset-1">RESET</button>
+        </section>
       </div>
       <!-- DECODE AREA -->
       <div class="grid-item decode-area" id="decode-screen">
-        <label for="input-decode">Decode your message:</label>
-        <textarea id="input-decode" cols="30" rows="3" placeholder="Message:" required ></textarea>
-        <input id="decode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
-        <button id="btn-decode">DECODE</button>
-        <button id="btn-reset-2">RESET</button>
+        <section>
+          <label for="input-decode">Decode your message:</label>
+          <textarea id="input-decode" cols="30" rows="3" placeholder="Message:" required ></textarea>
+          <input id="decode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
+          <button id="btn-decode">DECODE</button>
+          <button id="btn-reset-2">RESET</button>
+        </section>
       </div>
       <!-- OFFSET AREA -->
       <div class="grid-item offset-area" id="offset-screen">
-        <label for="show-message">Your encoded/decoded message here:</label>
-        <textarea id="show-message" cols="30" rows="3"></textarea><br/>
-        <label>Copy your message and send it!</label>
-        <br/>
-        <br/>
-        <div class="tooltip">
-          <button id="btn-copy">COPY
-            <span class="tooltiptext" id="my-tooltip">Copy to clipboard</span>
-          </button>
-        </div>
-        <button id="btn-reset-3">RESET</button>
-        <br/>
-        <a href="https://wa.me/?text=I%20have%20a%20message%20for%20you" data-action="share/whatsapp/share" target="_blank"><img src="../images/whatsapp-logo.png" class="btn-social btn-whatsapp" alt="Logo-WhatsApp"></a>
-        <a href="mailto:someone@example.com?" target="_top"><img src="../images/envelope.png" class="btn-social btn-mail" alt="Email"></a>
+        <section>
+          <label for="show-message">Your encoded/decoded message here:</label>
+          <textarea id="show-message" cols="30" rows="3"></textarea><br/>
+          <label>Copy your message and send it!</label>
+          <br/>
+          <br/>
+          <div class="tooltip">
+            <button id="btn-copy">COPY
+              <span class="tooltiptext" id="my-tooltip">Copy to clipboard</span>
+            </button>
+          </div>
+          <button id="btn-reset-3">RESET</button>
+          <br/>
+          <a href="https://wa.me/?text=I%20have%20a%20message%20for%20you" data-action="share/whatsapp/share" target="_blank"><img src="../images/whatsapp-logo.png" class="btn-social btn-whatsapp" alt="Logo-WhatsApp"></a>
+          <a href="mailto:someone@example.com?" target="_top"><img src="../images/envelope.png" class="btn-social btn-mail" alt="Email"></a>
+        </section>
       </div>
       <!-- FOOTER AREA -->
       <div class="grid-item footer">
