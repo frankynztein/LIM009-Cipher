@@ -4,38 +4,6 @@
    padding: 0;
  }
 
-#encode-screen, #decode-screen, #offset-screen, #teachme-screen {
-   display: none;
-}
-
-/* TEXTAREA__________________________________________ */
-textarea {
-   font-family: monospace;
-   font-size: 20px;
-   color: white;
-   margin: 20px;
-   background-color: black;
-   opacity: 0.9;
-}
-
-/* INPUT STYLE________________________________________ */
-input[type = number] {
-   background-color: black;
-   color: white;
-   opacity: 0.9;
-   font-family: monospace;
-   font-size: 20px;
-   font-weight: bold;
-   margin-bottom: 20px;
-   width: 100px;
-}
-
-input[type="number"].mod::-webkit-inner-spin-button:hover,
-input[type="number"].mod::-webkit-inner-spin-button:active{
-    box-shadow: 0 0 2px #48c002F;
-    opacity: .8;
-}
-
 /* GRID LAYOUT________________________________________ */
 html, body {
    height: 100%;
@@ -49,7 +17,7 @@ html, body {
    grid-template-rows: 20% 60% 20%;
    grid-template-areas:
       "header header header"
-      "encodeArea decodeArea offsetArea"
+      "encode-area decode-area offset-area"
       "footer footer footer";
 }
 
@@ -60,9 +28,9 @@ html, body {
       grid-template-rows: 20% 20% 20% 20% 20%;
       grid-template-areas:
          "header header"
-         "encodeArea encodeArea"
-         "decodeArea decodeArea"
-         "offsetArea offsetArea"
+         "encode-area encode-area"
+         "decode-area decode-area"
+         "offset-area offset-area"
          "footer footer";
    }
  }
@@ -73,9 +41,9 @@ html, body {
       grid-template-rows: 20% 50% 50% 50% 20%;
       grid-template-areas:
          "header"
-         "encodeArea"
-         "decodeArea" 
-         "offsetArea"
+         "encode-area"
+         "decode-area" 
+         "offset-area"
          "footer";
    }
 }
@@ -90,25 +58,32 @@ html, body {
 .header {
    grid-area: header;
 }
-.encodeArea {
-   grid-area: encodeArea;
+.encode-area {
+   grid-area: encode-area;
 }
- .decodeArea {
-   grid-area: decodeArea;
+ .decode-area {
+   grid-area: decode-area;
 }
-.offsetArea {
-   grid-area: offsetArea;
+.offset-area {
+   grid-area: offset-area;
 }
 .footer {
    grid-area: footer;
 }
-   
+.encode-area, .decode-area, .offset-area {
+   margin-top: 100px;
+}
+
+#encode-screen, #decode-screen, #offset-screen, #teachme-screen {
+   display: none;
+}
+
 /* ELEMENTS STYLES____________________________________ */
 header {
    margin-top: 50px;
 }
 
-.containerTW {
+.container-tw {
    display: inline-block;
    text-align: center;
 }
@@ -150,8 +125,33 @@ footer p {
    font-size: 22px;
 }
 
-.encodeArea, .decodeArea, .offsetArea {
-   margin-top: 100px;
+
+/* TEXTAREA__________________________________________ */
+textarea {
+   font-family: monospace;
+   font-size: 20px;
+   color: white;
+   margin: 20px;
+   background-color: black;
+   opacity: 0.9;
+}
+
+/* INPUT STYLE________________________________________ */
+input[type = number] {
+   background-color: black;
+   color: white;
+   opacity: 0.9;
+   font-family: monospace;
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   width: 100px;
+}
+
+input[type="number"].mod::-webkit-inner-spin-button:hover,
+input[type="number"].mod::-webkit-inner-spin-button:active{
+    box-shadow: 0 0 2px #48c002F;
+    opacity: .8;
 }
 
 /* TYPEWRITER EFFECT__________________________________ */

@@ -11,7 +11,7 @@
     <div class="grid-container">
       <!-- LOGO -->
       <header class="grid-item header">
-        <div class="containerTW">
+        <div class="container-tw">
           <div class="typewriter">
             <h1>Area 51</h1>
           </div>
@@ -26,7 +26,7 @@
         <p>Choose your language:</p>
         <br/>
         <button id="btn-english">ENGLISH</button>
-        <button id="btn-spanish"><a href="https://frankynztein.github.io/Cipher-Spanish-Version/src" target="_blank">ESPAÑOL</a></button><br/>
+        <a href="https://frankynztein.github.io/Cipher-Spanish-Version/src" target="_blank"><button id="btn-spanish">ESPAÑOL</button></a><br/>
         <button id="btn-teachme">Teach me how to cipher!</button><br/>
         <img src="../images/undraw_artificial_intelligence_upfn.svg" alt="Robot" id="img-robot">
       </div>
@@ -46,7 +46,7 @@
         <button id="btn-letscipher">Got it! Let's cipher!</button>
       </div>
       <!-- ENCODE AREA -->
-      <div class="grid-item encodeArea" id="encode-screen">
+      <div class="grid-item encode-area" id="encode-screen">
         <label for="input-encode">Encode your message:</label>
         <textarea id="input-encode" cols="30" rows="3" placeholder="Message:" required ></textarea>
         <input id="encode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
@@ -54,7 +54,7 @@
         <button id="btn-reset-1">RESET</button>
       </div>
       <!-- DECODE AREA -->
-      <div class="grid-item decodeArea" id="decode-screen">
+      <div class="grid-item decode-area" id="decode-screen">
         <label for="input-decode">Decode your message:</label>
         <textarea id="input-decode" cols="30" rows="3" placeholder="Message:" required ></textarea>
         <input id="decode-offset" type="number" min="-100" max="100" placeholder="Key" required ><br/>
@@ -62,7 +62,7 @@
         <button id="btn-reset-2">RESET</button>
       </div>
       <!-- OFFSET AREA -->
-      <div class="grid-item offsetArea" id="offset-screen">
+      <div class="grid-item offset-area" id="offset-screen">
         <label for="show-message">Your encoded/decoded message here:</label>
         <textarea id="show-message" cols="30" rows="3"></textarea><br/>
         <label>Copy your message and send it!</label>
@@ -70,7 +70,7 @@
         <br/>
         <div class="tooltip">
           <button id="btn-copy">COPY
-            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            <span class="tooltiptext" id="my-tooltip">Copy to clipboard</span>
           </button>
         </div>
         <button id="btn-reset-3">RESET</button>
